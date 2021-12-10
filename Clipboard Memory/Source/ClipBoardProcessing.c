@@ -1,9 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <stdlib.h>
-#include "ClipBoardProcessing.h"
-#include "ClipBoardFile.h"
-#include "LinkedList.h"
+#include "../Headers/ClipboardProcessing.h"
+#include "../Headers/ClipboardFile.h"
+#include "../Headers/LinkedList.h"
 
 int AddTerm(Node** list, char* filePath, CLIPBOARDDATA* dataToAdd)
 {

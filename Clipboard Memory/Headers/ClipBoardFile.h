@@ -1,6 +1,6 @@
 #pragma once
 #include  <stdio.h>
-#include "ClipBoardTypes.h"
+#include "ClipboardTypes.h"
 
 //int OpenFile(char *filePat);
 //int CloseFile(char* filePat);

@@ -1,4 +1,4 @@
-#include "LinkedList.h"
+#include "../Headers/LinkedList.h"
 #include <stdlib.h>
 
 void Push(Node** head, CLIPBOARDDATA data)

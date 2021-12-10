@@ -147,16 +147,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ClipBoardFile.c" />
-    <ClCompile Include="ClipBoardProcessing.c" />
-    <ClCompile Include="LinkedList.c" />
+    <ClCompile Include="Source\ClipboardFile.c" />
+    <ClCompile Include="Source\ClipboardProcessing.c" />
+    <ClCompile Include="Source\LinkedList.c" />
     <ClCompile Include="MainWindow.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClipBoardFile.h" />
-    <ClInclude Include="ClipBoardProcessing.h" />
-    <ClInclude Include="ClipBoardTypes.h" />
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="Headers\ClipboardFile.h" />
+    <ClInclude Include="Headers\ClipboardProcessing.h" />
+    <ClInclude Include="Headers\ClipboardTypes.h" />
+    <ClInclude Include="Headers\LinkedList.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="resource1.h" />
     <ClInclude Include="resource2.h" />

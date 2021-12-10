@@ -1,5 +1,5 @@
 #pragma once
-#include "ClipBoardTypes.h"
+#include "ClipboardTypes.h"
 
 int AddTerm(Node** list, char* filePath, CLIPBOARDDATA *dataToAdd);
 int DeleteTerm(Node** list, char* filePath, int termInd);

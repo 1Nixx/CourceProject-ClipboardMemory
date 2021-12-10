@@ -18,13 +18,13 @@
     <ClCompile Include="MainWindow.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ClipBoardFile.c">
+    <ClCompile Include="Source\ClipboardFile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ClipBoardProcessing.c">
+    <ClCompile Include="Source\ClipboardProcessing.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList.c">
+    <ClCompile Include="Source\LinkedList.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,16 +38,16 @@
     <ClInclude Include="resource2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClipBoardFile.h">
+    <ClInclude Include="Headers\ClipboardFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClipBoardProcessing.h">
+    <ClInclude Include="Headers\ClipboardProcessing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClipBoardTypes.h">
+    <ClInclude Include="Headers\ClipboardTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList.h">
+    <ClInclude Include="Headers\LinkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

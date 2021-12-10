@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 
-#include "ClipBoardFile.h"
+#include <stdio.h>
+#include "../Headers/ClipboardTypes.h"
 
 typedef struct
 {

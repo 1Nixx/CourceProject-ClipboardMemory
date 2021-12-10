@@ -11,8 +11,8 @@ version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' la
 #include "resource.h"  
 #include <commctrl.h>
 #include <shlobj_core.h>
-#include "ClipBoardTypes.h"
-#include "ClipBoardProcessing.h"
+#include "Headers\ClipBoardTypes.h"
+#include "Headers\ClipBoardProcessing.h"
 #include "resource2.h"
 
 #define WND_HEIGHT 430
