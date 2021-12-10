@@ -11,14 +11,14 @@ version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' la
 #include "resource.h"  
 #include <commctrl.h>
 #include <shlobj_core.h>
-#include "../Testfile/ClipBoardTypes.h"
-#include "../Testfile/ClipBoardProcessing.h"
+#include "ClipBoardTypes.h"
+#include "ClipBoardProcessing.h"
 #include "resource2.h"
 
 #define WND_HEIGHT 430
 #define WND_WIDTH 395
 #define HOTKEY1  1002
-#define HOTKEY_BUTTON 0x5A
+#define HOTKEY_BUTTON 0x56
 
 #define ID_TABCLASS 8
 
@@ -136,8 +136,8 @@ BOOL MainWindowCreate(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 	//wchar_t *folderPath;
 	//int a = SHGetKnownFolderPath(&FOLDERID_RoamingAppData, KF_FLAG_DEFAULT, NULL, &folderPath);
 	
-	tabItemList[1].filePath = "dataFav.txt";
-	tabItemList[0].filePath = "dataReg.txt";
+	tabItemList[1].filePath = "dataFav.bin";
+	tabItemList[0].filePath = "dataReg.bin";
 	tabItemList[0].list = GetListTermFromFile(tabItemList[0].filePath);
 
 	hWndNextViewer = SetClipboardViewer(hWnd);
@@ -442,23 +442,6 @@ BOOL ClipBoardUnicodeTextRead(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam
 			wchar_t* typeStr = L"Text";
 			AddAdditionalInfoToClipboard(&dataToAdd, lptstr, wcslen(lptstr), sizeof(wchar_t), typeStr);
 
-			/*CLIPBOARDDATA dataToAdd;
-			dataToAdd.dataLength = wcslen(lptstr) * sizeof(wchar_t);
-			dataToAdd.data = calloc(wcslen(lptstr) + 1, sizeof(wchar_t));
-			memcpy(dataToAdd.data, lptstr, dataToAdd.dataLength);
-
-			
-			dataToAdd.type = calloc(wcslen(typeStr) + 1, sizeof(wchar_t));
-			memcpy(dataToAdd.type, typeStr, wcslen(typeStr) * 2);
-
-			SYSTEMTIME time;
-			GetLocalTime(&time);
-
-			wchar_t* timeStr = calloc(TIMESTRSIZE, sizeof(wchar_t));
-			swprintf(timeStr, TIMESTRSIZE, L"%02d.%02d.%d %02d:%02d", time.wDay, time.wMonth, time.wYear, time.wHour, time.wMinute);
-
-			dataToAdd.dateTime = timeStr;*/
-
 			AddTerm(&tabItemList[0].list, tabItemList[0].filePath, &dataToAdd);
 			GlobalUnlock(hglb);
 		}
@@ -570,7 +553,7 @@ LRESULT CALLBACK MainWindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 	case WM_CREATE:
 		MainWindowCreate(hWnd, uMsg, wParam, lParam);
 		AddTrayIcon(hWnd, uMsg, wParam, lParam);
-		RegisterHotKey(hWnd, HOTKEY1, MOD_SHIFT, HOTKEY_BUTTON);
+		RegisterHotKey(hWnd, HOTKEY1, MOD_ALT, HOTKEY_BUTTON);
 		return 0;
 	case WM_NOTIFY:	
 		switch (((LPNMHDR)lParam)->code)

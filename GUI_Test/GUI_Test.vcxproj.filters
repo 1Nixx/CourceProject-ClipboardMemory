@@ -18,13 +18,13 @@
     <ClCompile Include="MainWindow.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Testfile\ClipBoardProcessing.c">
+    <ClCompile Include="ClipBoardFile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Testfile\ClipBoardFile.c">
+    <ClCompile Include="ClipBoardProcessing.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Testfile\LinkedList.c">
+    <ClCompile Include="LinkedList.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,22 +32,22 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Testfile\ClipBoardProcessing.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Testfile\ClipBoardTypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Testfile\ClipBoardFile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Testfile\LinkedList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="resource1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipBoardFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipBoardProcessing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipBoardTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

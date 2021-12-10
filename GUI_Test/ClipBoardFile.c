@@ -19,6 +19,7 @@ int AddToFile(char *filePath, CLIPBOARDDATA *data)
 	}
 	else
 		return 0;
+	return 1;
 }
 
 int GetRecordSize(CLIPBOARDSIZE *buffer,  FILE* hFile)
