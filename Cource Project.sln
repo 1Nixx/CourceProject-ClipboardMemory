@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Clipboard Memory", "GUI_Test\GUI_Test.vcxproj", "{D6CD08B1-12E5-437E-9992-E0B6CB57F36C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Clipboard Memory", "Clipboard Memory\GUI_Test.vcxproj", "{D6CD08B1-12E5-437E-9992-E0B6CB57F36C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
